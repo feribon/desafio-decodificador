@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Decodificador</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Decodificador Alura</h1>
+    </header>
+    <div class="areas">
+      <section class="areaEntrada">
+        <h3>Para criptografar, digite abaixo.</h3>
+        <textarea
+          ondblclick="copia1()"
+          name=""
+          class="textoEntrada"
+          placeholder="Digite seu texto aqui"
+          cols="60"
+          rows="30"
+          autofocus
+          id="entrada"
+        ></textarea>
+      </section>
+      <section class="botoes">
+        <button onclick="criptografar()">Criptografar</button>
+        <button onclick="descriptografar()">Descriptografar</button>
+      </section>
+      <section class="textoSaida">
+        <h3>Para descriptografar, digite abaixo.</h3>
+        <textarea
+        ondblclick="copia2()"
+          name=""
+          class="textoSaida"
+          cols="60"
+          rows="30"
+          placeholder="Digite seu texto aqui"
+          id="saida"
+        ></textarea>
+      </section>
+    </div>
+    <div class="regras">
+      <p>Apenas palavras sem acentuação</p>
+      <p>Apenas letras minúsculas</p>
+      <p>Clique duplo no texto para copiar</p>
+    </div>
+    <footer>Desenvolvido por <a href=""></a> Felipe Grassi Ribon</footer>
+  </body>
+  <script src="script.js"></script>
+</html>
